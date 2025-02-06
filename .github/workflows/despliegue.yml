@@ -58,5 +58,5 @@ jobs:
           # Instalar dependencias en el servidor
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST "cd $DEPLOY_PATH && composer install --no-dev --optimize-autoloader"
 
-          # Reiniciar Apache si es necesario
+          # Reiniciar Apache si es necesar
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST "sudo systemctl restart apache2"
