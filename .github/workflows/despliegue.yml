@@ -49,7 +49,7 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
-           # Use SSH to create the deploy path if it doesn't exist
+           # Use SSH to create the deploy path if it doesn't existtttt
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST "mkdir -p $DEPLOY_PATH"
 
           # Sincronizar archivos al servidor (excluyendo archivos innecesarios)
